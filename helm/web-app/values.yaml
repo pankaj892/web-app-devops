@@ -8,7 +8,7 @@ image:
   repository: pankaj892/webapp
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "11439972714"
+  tag: "11440208844"
 
 imagePullSecrets: []
 nameOverride: ""
