@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj's DevOps Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #4a90e2, #9013fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .container.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            max-width: 600px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #e94e77;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #d03d66;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="homepage">
+        <img src="https://via.placeholder.com/150" alt="Pankaj's Profile Picture">
+        <h1>Welcome to my Portfolio</h1>
+        <h2>DevOps Engineer</h2>
+        <p>
+            I am Pankaj Biradar a Devops Engineer with 2 years of experience in automating, configuring, and deploying applications.
+            Passionate about automating processes and enhancing system performance. 
+            Experienced in cloud computing, CI/CD pipelines, and containerization.
+        </p>
+
+        <a href="https://github.com/pankaj892"><button class="button" onclick="alert('Welcome to my portfolio!')">Get in Touch</button></a>
+    </div>
+
+    <script>
+        window.onload = () => {
+            const homepageContainer = document.getElementById('homepage');
+            homepageContainer.classList.add('visible');
+        };
+    </script>
+</body>
+</html>
